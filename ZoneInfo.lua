@@ -52,7 +52,7 @@ function T:ZoneChanged(event)
 	self.oldZoneText=GetMinimapZoneText()
 	SetMapToCurrentZone()
 	local tex,_,_=GetMapInfo()
-	local level=GetCurrentMapDungeonLevel()
+	local level=0
 	self.hasLevels=(level>0)
 	if tex=="Ulduar" then level=level-1 end -- Why????
 	if level>0 then

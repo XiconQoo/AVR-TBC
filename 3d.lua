@@ -333,9 +333,9 @@ function T:MakeCameraMatrix()
 	end
 	
 	SaveView(5);
-	self.cameraPitch=GetCVar("cameraPitchE")*deg2rad
-	self.cameraDistance=GetCVar("cameraDistanceE")*self.cameraDistF
-	self.cameraYaw=tonumber(GetCVar("cameraYawE"))*deg2rad
+	self.cameraPitch=GetCVar("cameraPitchD")*deg2rad
+	self.cameraDistance=GetCVar("cameraDistanceD")*self.cameraDistF
+	self.cameraYaw=tonumber(GetCVar("cameraYawD"))*deg2rad
 	self.playerDirection=GetPlayerFacing()
 	self.frameF=self.screenHeight2*2.0
 	self.playerPosX,self.playerPosY=self:GetUnitPosition("player")
