@@ -1,0 +1,36 @@
+## Interface: 20400
+## Title: AVR
+## Author: Olog
+## Version: r31
+## Notes: Augmented Virtual Reality. Draw and add markers in the 3d world.
+## Notes-zhCN: 虚拟现实增强。在 3D 游戏世界内画图和标记。
+## Notes-zhTW: 虛擬現實增強。在 3D 遊戲世界內畫圖和標記。
+## SavedVariables: AVR_DB
+## OptionalDeps: Ace3, LibCompress, LibBase64-1.0
+## X-Curse-Packaged-Version: r31
+## X-Curse-Project-Name: AVR
+## X-Curse-Project-ID: avr
+## X-Curse-Repository-ID: wow/avr/mainline
+
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+locales.xml
+
+Core.lua
+CorePublic.lua
+CoreTools.lua
+Options.lua
+3d.lua
+MousePaint.lua
+ZoneInfo.lua
+Scene.lua
+SceneManager.lua
+Mesh.lua
+meshes\meshes.xml
+RangeWarning.lua
+ByteStream.lua
+#MeshEdit.lua
+Edit.lua
