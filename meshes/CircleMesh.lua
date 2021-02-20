@@ -27,7 +27,7 @@ function AVRCircleMesh:New(radius,segments,dashed,width)
 	s.radius=radius or 10
 	s.segments=segments or 30
 	s.dashed=dashed or false	
-	s.lineWidth=width
+	s.lineWidth=width or 30
 	s.vertices=nil
 	s.name=L["Circle"]
 	return s
@@ -49,6 +49,12 @@ function AVRCircleMesh:SetDashed(dashed)
 	return self
 end
 
+function AVRCircleMesh:SetLineWidth(lineWidth)
+	self.lineWidth=lineWidth
+	self.vertices=nil
+	return self
+end
+
 function AVRCircleMesh:GetOptions()
 	local o=AVRMesh.GetOptions(self)
 	o.args.circle = {
@@ -63,7 +69,14 @@ function AVRCircleMesh:GetOptions()
 				order = 10,
 				width = "full",
 				min = 0.0, max=500, bigStep=1.0
-			},					
+			},
+			lineWidth = {
+				type = "range",
+				name = L["Line Width"],
+				order = 11,
+				width = "full",
+				min = 1, max=200, bigStep=1.0
+			},
 			segments = {
 				type = "range",
 				name = L["Segments"],
@@ -119,7 +132,7 @@ function AVRCircleMesh:Unpack(s)
 	self.segments=s.seg or 30
 	if s.das~=nil then self.dashed=s.das
 	else self.dashed=false end
-	self.lw=s.lw
+	self.lineWidth=s.lw
 	self.vertices=nil
 end
 

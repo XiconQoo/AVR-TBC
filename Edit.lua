@@ -477,7 +477,7 @@ function T:RefreshOptionsFrame()
 	
 	local m=self:GetSelectedMesh()
 	local edit=self.options.args.editGroup.args
-	local optionals={'radius','size','icon','length','headSize','width'}
+	local optionals={'radius','size','icon','length','headSize','width', 'lineWidth'}
 	for _,v in ipairs(optionals) do
 		edit[v]=nil
 	end
@@ -500,6 +500,25 @@ function T:RefreshOptionsFrame()
 							m:SetRadius(value)
 						end,
 			}
+			if m.class==AVRCircleMesh.meshInfo.class then
+				edit.lineWidth = {
+					name = L["Line Width"],
+					type = "range",
+					order = 101,
+					width = "full",
+					min = 1, max = 200, bigStep = 1,
+					get = 	function(info)
+						local m=self:GetSelectedMesh()
+						if not m then return 0 end
+						return m.lineWidth
+					end,
+					set = 	function(info,value)
+						local m=self:GetSelectedMesh()
+						if not m then return end
+						m:SetLineWidth(value)
+					end,
+				}
+			end
 		elseif m.class==AVRRaidIconMesh.meshInfo.class then
 			edit.size={
 				name = L["Size"],
