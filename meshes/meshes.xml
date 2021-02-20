@@ -1,0 +1,13 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="DataMesh.lua"/>
+	<Script file="CircleMesh.lua"/>
+	<Script file="FilledCircleMesh.lua"/>
+	<Script file="ConeMesh.lua"/>
+	<Script file="YardStickMesh.lua"/>
+	<Script file="MarkerMesh.lua"/>
+	<Script file="DerivedMeshes.lua"/>
+	<Script file="RaidIconMesh.lua"/>
+	<Script file="ArrowMesh.lua"/>
+	<Script file="TimerCircleMesh.lua"/>
+</Ui>

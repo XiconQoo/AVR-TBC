@@ -1,0 +1,154 @@
+------------------------------------------------------------------------
+r31 | olog | 2010-05-02 20:23:20 +0000 (Sun, 02 May 2010) | 1 line
+Changed paths:
+   M /trunk/Mesh.lua
+
+- Fixed problem with setting visible=false on meshes
+------------------------------------------------------------------------
+r30 | olog | 2010-04-28 15:47:07 +0000 (Wed, 28 Apr 2010) | 1 line
+Changed paths:
+   M /trunk/3d.lua
+
+- Fixed a SetTexCoord out of range bug with Draw3DTexture
+------------------------------------------------------------------------
+r29 | olog | 2010-04-28 15:04:33 +0000 (Wed, 28 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/Options.lua
+
+- Changed default sharing options to only accept scenes from raid leader and raid assist
+- Normal scenes created in advanced options default to current zone
+------------------------------------------------------------------------
+r28 | olog | 2010-04-27 20:18:14 +0000 (Tue, 27 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/ByteStream.lua
+   A /trunk/Locales/frFR.lua
+   M /trunk/locales.xml
+
+- Minor bug fixes
+- French localization
+------------------------------------------------------------------------
+r27 | olog | 2010-04-26 15:05:04 +0000 (Mon, 26 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/CorePublic.lua
+   M /trunk/RangeWarning.lua
+
+- Reverted send scene to old version for backwards compatibility
+- Fixed bug with range warning when show circle was turned off
+------------------------------------------------------------------------
+r26 | ananhaid | 2010-04-26 00:29:54 +0000 (Mon, 26 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/Locales/zhCN.lua
+   M /trunk/Locales/zhTW.lua
+
+AVR
+- zhCN/zhTW update.
+------------------------------------------------------------------------
+r25 | olog | 2010-04-25 14:29:31 +0000 (Sun, 25 Apr 2010) | 3 lines
+Changed paths:
+   M /trunk/3d.lua
+   M /trunk/meshes/ArrowMesh.lua
+   M /trunk/meshes/MarkerMesh.lua
+
+- MapCoordinatesToYards in 3d
+- SetLineWidth in AVRMarkerMesh
+- PointTo method in AVRArrowMesh
+------------------------------------------------------------------------
+r24 | olog | 2010-04-25 13:12:27 +0000 (Sun, 25 Apr 2010) | 4 lines
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/3d.lua
+   M /trunk/Core.lua
+   M /trunk/CorePublic.lua
+   M /trunk/Edit.lua
+   M /trunk/Locales/enUS.lua
+   M /trunk/Options.lua
+   M /trunk/RangeWarning.lua
+   M /trunk/Scene.lua
+   M /trunk/ZoneInfo.lua
+   M /trunk/embeds.xml
+
+- Version check
+- Zone restriction in simple scene editor
+- Less interfering with map in outside areas
+- Blacklist for incoming scenes
+------------------------------------------------------------------------
+r23 | ananhaid | 2010-04-22 10:47:54 +0000 (Thu, 22 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/Locales/zhCN.lua
+   M /trunk/Locales/zhTW.lua
+
+AVR:
+- fix.
+------------------------------------------------------------------------
+r22 | digmouse | 2010-04-22 10:42:18 +0000 (Thu, 22 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/Locales/zhCN.lua
+   M /trunk/Locales/zhTW.lua
+
+Fix zhTW comment error.
+Correct some translations.
+------------------------------------------------------------------------
+r21 | ananhaid | 2010-04-22 10:26:39 +0000 (Thu, 22 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/Locales/zhTW.lua
+
+AVR:
+- fix.
+------------------------------------------------------------------------
+r20 | ananhaid | 2010-04-22 10:03:33 +0000 (Thu, 22 Apr 2010) | 2 lines
+Changed paths:
+   M /trunk/AVR.toc
+   A /trunk/Locales/zhCN.lua
+   A /trunk/Locales/zhTW.lua
+   M /trunk/locales.xml
+
+AVR:
+- add zhCN/zhTW.
+------------------------------------------------------------------------
+r18 | olog | 2010-04-15 16:55:30 +0000 (Thu, 15 Apr 2010) | 3 lines
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/3d.lua
+   D /trunk/AVR_BigWigs_Citadel
+   M /trunk/Edit.lua
+   M /trunk/Locales/enUS.lua
+   M /trunk/Mesh.lua
+   M /trunk/MousePaint.lua
+   M /trunk/RangeWarning.lua
+   M /trunk/meshes/DataMesh.lua
+
+- Removed AVR_BigWigs module, use AVR Encounters addon instead
+- Line thickness can be adjusted on mouse paint meshes
+- Bug fixes
+------------------------------------------------------------------------
+r16 | olog | 2010-04-06 20:35:59 +0000 (Tue, 06 Apr 2010) | 4 lines
+Changed paths:
+   M /trunk/3d.lua
+   M /trunk/AVR_BigWigs_Citadel/Festergut.lua
+   M /trunk/AVR_BigWigs_Citadel/Putricide.lua
+   M /trunk/AVR_BigWigs_Citadel/Sindragosa.lua
+   M /trunk/ByteStream.lua
+   M /trunk/Core.lua
+   M /trunk/CoreTools.lua
+   M /trunk/Edit.lua
+   A /trunk/Icons/arrow.tga
+   M /trunk/Locales/enUS.lua
+   M /trunk/Mesh.lua
+   M /trunk/Options.lua
+   M /trunk/RangeWarning.lua
+   M /trunk/Scene.lua
+   M /trunk/SceneManager.lua
+   A /trunk/Textures/filledcircle.tga
+   A /trunk/Textures/marker.tga
+   M /trunk/ZoneInfo.lua
+   A /trunk/meshes/ArrowMesh.lua
+   M /trunk/meshes/FilledCircleMesh.lua
+   M /trunk/meshes/MarkerMesh.lua
+   A /trunk/meshes/TimerCircleMesh.lua
+   M /trunk/meshes/meshes.xml
+
+- Added arrow mesh
+- Added timer circle mesh (used on some bosses in BigWigs scene)
+- Added some descriptions in options
+- Many bug fixes and tweaks 
+------------------------------------------------------------------------
