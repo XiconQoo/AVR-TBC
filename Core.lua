@@ -13,6 +13,21 @@ local format = string.format
 AVR = LibStub("AceAddon-3.0"):NewAddon(ADDON_NAME, "AceEvent-3.0", "AceConsole-3.0", "AceHook-3.0", "AceSerializer-3.0", "AceComm-3.0", "AceTimer-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale(ADDON_NAME, true)
 
+local arrow
+function GetPlayerFacing()
+	if not arrow then
+		local obj = Minimap
+		for i = 1, obj:GetNumChildren() do
+			local child = select(i, obj:GetChildren())
+			if child and child.GetModel and child:GetModel() == "interface\\minimap\\minimaparrow.m2" then
+				arrow = child
+				break
+			end
+		end
+	end
+
+	return arrow and arrow:GetFacing()
+end
 
 local Core=AVR
 
