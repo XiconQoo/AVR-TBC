@@ -1,7 +1,7 @@
 ## Interface: 20400
-## Title: AVR
-## Author: Olog
-## Version: r31
+## Title: AVR-XiconEdit
+## Author: Olog, XiconQoo
+## Version: v1.0-Release
 ## Notes: Augmented Virtual Reality. Draw and add markers in the 3d world.
 ## Notes-zhCN: 虚拟现实增强。在 3D 游戏世界内画图和标记。
 ## Notes-zhTW: 虛擬現實增強。在 3D 遊戲世界內畫圖和標記。
@@ -12,10 +12,7 @@
 ## X-Curse-Project-ID: avr
 ## X-Curse-Repository-ID: wow/avr/mainline
 
-
-#@no-lib-strip@
 embeds.xml
-#@end-no-lib-strip@
 
 locales.xml
 
