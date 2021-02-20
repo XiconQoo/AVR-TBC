@@ -340,7 +340,7 @@ function T:MakeCameraMatrix()
 	self.frameF=self.screenHeight2*2.0
 	self.playerPosX,self.playerPosY=self:GetUnitPosition("player")
 	self.playerPosZ=0
-	--if IsMounted() then self.playerPosZ=self.playerPosZ+0.9 end
+	if IsMounted() then self.playerPosZ=self.playerPosZ+0.9 end
 		
 	adjust=0.0
 	if IsMouselooking() or self.leftDown==1 then
